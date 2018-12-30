@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

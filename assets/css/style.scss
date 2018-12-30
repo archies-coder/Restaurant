@@ -1,0 +1,48 @@
+// Includes
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+// Property Objects
+
+$colors : (
+    btn:#D32F2F,
+    green: #00A00B,
+    grey: #C4C4C4,
+    orange: #FF3300
+);
+
+$fonts : (
+    primary: ('Ubuntu', sans-serif),
+    secondary : (italic small-caps normal 13px/150% Arial, Helvetica, sans-serif)
+);
+
+// Font-Weights
+
+$bold: 800;
+$semibold : 600; 
+
+// Functions
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+@function font($font-name){
+    @return map-get($fonts, $font-name);
+}
+
+// CSS Starts Here Actually
+
+// Common/Global
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family : font(secondary);
+    font-weight: $bold;
+}
