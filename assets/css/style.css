@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Allura");
 header {
   height: 60px;
-  background-color: #C4C4C4;
+  background-color: #fff;
 }
 
 header #title {
@@ -98,10 +98,10 @@ html {
 
 a {
   text-decoration: none;
+  border-radius: 30px;
 }
 
 a .btn {
-  text-align: center;
   background-color: #D32F2F;
   position: absolute;
   top: 450px;
@@ -110,7 +110,6 @@ a .btn {
   width: 300px;
   border: 0;
   border-radius: 30px;
-  z-index: 10;
   color: #fff;
   font: small-caps 30px "B612 Mono", monospace;
   letter-spacing: 2px;
