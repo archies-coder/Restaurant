@@ -1,0 +1,39 @@
+//Put All Fonts, Text Styles And all such Crap Here
+
+// Imports
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+// Property Objects
+$colors : (
+    btn: #D32F2F,
+    green: #00A00B,
+    grey: #C4C4C4,
+    orange: #FF3300,
+    maroon : #410707,
+);
+
+$fonts : (
+    title: (20px 'Ubuntu', sans-serif),
+    primary: (40px Arial),
+    h1: (40px Arial),
+    secondary: (italic small-caps normal 18px/150% Arial, Helvetica, sans-serif),
+    marker: (60px 'Permanent Marker', cursive),
+    btn-text: (small-caps 30px 'B612 Mono', monospace),
+    tagline: (30px 'Allura', cursive ),
+);
+  
+// Font-Weights
+
+$bold: 900;
+$semibold: 600;
+$regular: 400;
+$semilight: 250; 
+$light: 100;
+
+
+@import 'functions';

@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=B612+Mono");
+@import url("https://fonts.googleapis.com/css?family=Allura");
+header {
+  height: 60px;
+  background-color: #C4C4C4;
+}
+
+header #title {
+  font: 20px "Ubuntu", sans-serif;
+  display: inline-block;
+  width: 33%;
+}
+
+header #title a {
+  color: #000;
+  text-decoration: none;
+}
+
+header #title h1 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+}
+
+header nav ul {
+  cursor: pointer;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  color: black;
+}
+
+header nav ul li span {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+
+header nav ul li span img {
+  height: 18px;
+  width: 18px;
+}
+
+header nav .social-ul {
+  margin-left: 150px;
+}
+
+header nav .social-ul li {
+  margin-right: 20px;
+}
+
 * {
   list-style: none;
   margin: 0;
@@ -6,8 +70,121 @@
   text-decoration: none;
 }
 
-body {
-  font-family: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
-  font-weight: 800;
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbo {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
+  background-color: #FF3300;
+  width: 100%;
+  height: 500px;
+  background: url(/assets/img/food-salad.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.jumbo h1 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  font: 60px "Permanent Marker", cursive;
+  color: #410707;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a .btn {
+  text-align: center;
+  background-color: #D32F2F;
+  position: absolute;
+  top: 450px;
+  left: 150px;
+  height: 60px;
+  width: 300px;
+  border: 0;
+  border-radius: 30px;
+  z-index: 10;
+  color: #fff;
+  font: small-caps 30px "B612 Mono", monospace;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.about-div .about {
+  font: 40px Arial;
+  position: absolute;
+  top: 280px;
+  right: 40px;
+}
+
+.about-div span {
+  position: absolute;
+  top: 345px;
+  right: 40px;
+  font: 30px "Allura", cursive;
+  color: #00A00B;
+}
+
+.about-div p {
+  font: italic small-caps normal 18px/150% Arial, Helvetica, sans-serif;
+  text-align: right;
+  position: absolute;
+  top: 400px;
+  right: 20px;
+  width: 50%;
+}
+
+.about-para-2 {
+  margin-top: 60px;
+  font: italic small-caps normal 18px/150% Arial, Helvetica, sans-serif;
+  text-align: left;
+  width: 50%;
+  position: absolute;
+  left: 20px;
+}
+
+section.about-img-section {
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 600px;
+  width: 100%;
+  background-color: #FF3300;
+  height: 500px;
+}
+
+section.about-img-section .about-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section.about-img-section .about-img-1 {
+  background: url(/assets/img/food-img-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+section.about-img-section .about-img-2 {
+  background: url(/assets/img/food-img-02.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+section.about-img-section .about-img-3 {
+  background: url(/assets/img/food-img-03.jpg);
+  background-size: auto;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */
