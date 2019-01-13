@@ -1,0 +1,36 @@
+.gallery-section{
+    position: absolute;
+    top: 1700px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: color(grey);
+
+    h1{
+        font: font(primary);
+        margin-top: 30px;
+    }
+
+    span{
+        font: font(tagline);
+        color: color(green);
+    }
+
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0;
+        margin-top: 30px;
+        // height: 600px;
+    }
+
+    .gallery-img-container{
+        height: 300px;
+
+        img{
+            height: 300px;
+            width: 421px;
+        }
+    }
+}

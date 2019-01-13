@@ -63,66 +63,6 @@ header nav .social-ul li {
   margin-right: 20px;
 }
 
-* {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.jumbo {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
-          clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
-  background-color: #FF3300;
-  width: 100%;
-  height: 500px;
-  background: url(/assets/img/food-salad.jpg);
-  background-size: cover;
-  background-position: center top;
-}
-
-.jumbo h1 {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  font: 60px "Permanent Marker", cursive;
-  color: #410707;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-  border-radius: 30px;
-}
-
-a .btn {
-  background-color: #D32F2F;
-  position: absolute;
-  top: 450px;
-  left: 150px;
-  height: 60px;
-  width: 300px;
-  border: 0;
-  border-radius: 30px;
-  color: #fff;
-  font: small-caps 30px "B612 Mono", monospace;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
 .about-div .about {
   font: 40px Arial;
   position: absolute;
@@ -202,7 +142,7 @@ section.about-img-section .about-img-3 {
   top: 1100px;
   width: 100%;
   height: 600px;
-  background-color: #C4C4C4;
+  background-color: #d4d4d4;
   text-align: center;
 }
 
@@ -316,5 +256,104 @@ section.about-img-section .about-img-3 {
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
+}
+
+.gallery-section {
+  position: absolute;
+  top: 1700px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #d4d4d4;
+}
+
+.gallery-section h1 {
+  font: 40px Arial;
+  margin-top: 30px;
+}
+
+.gallery-section span {
+  font: 30px "Allura", cursive;
+  color: #00A00B;
+}
+
+.gallery-section .gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 0;
+  margin-top: 30px;
+}
+
+.gallery-section .gallery-img-container {
+  height: 300px;
+}
+
+.gallery-section .gallery-img-container img {
+  height: 300px;
+  width: 421px;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.jumbo {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
+  background-color: #FF3300;
+  width: 100%;
+  height: 500px;
+  background: url(/assets/img/food-salad.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.jumbo h1 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  font: 60px "Permanent Marker", cursive;
+  color: #410707;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+a .btn {
+  background-color: #D32F2F;
+  position: absolute;
+  top: 450px;
+  left: 150px;
+  height: 60px;
+  width: 300px;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  font: small-caps 30px "B612 Mono", monospace;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
