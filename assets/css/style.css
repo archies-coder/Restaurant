@@ -297,6 +297,111 @@ section.about-img-section .about-img-3 {
   width: 421px;
 }
 
+.contact-section {
+  position: absolute;
+  top: 2425px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #d4d4d4;
+}
+
+.contact-section .contact-heading {
+  font: 40px Arial;
+  margin-top: 30px;
+}
+
+.contact-section span {
+  font: 30px "Allura", cursive;
+  color: #00A00B;
+}
+
+.contact-section .contact-div {
+  width: 800px;
+  margin-left: 18%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.contact-section .contact-div form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 80px 250px;
+      grid-template-rows: 80px 250px;
+  grid-row-gap: 60px;
+  text-align: center;
+}
+
+.contact-section .contact-div form #fname,
+.contact-section .contact-div form #lname {
+  width: 300px;
+  border: 0.5px solid #000;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.contact-section .contact-div form #fname::-webkit-input-placeholder,
+.contact-section .contact-div form #lname::-webkit-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #fname:-ms-input-placeholder,
+.contact-section .contact-div form #lname:-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #fname::-ms-input-placeholder,
+.contact-section .contact-div form #lname::-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #fname::placeholder,
+.contact-section .contact-div form #lname::placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #message {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  border: 0.5px solid #000;
+  height: 250px;
+  width: 600px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.contact-section .contact-div form #message::-webkit-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #message:-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #message::-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form #message::placeholder {
+  padding-left: 20px;
+}
+
+.contact-section .contact-div form .book-now {
+  position: absolute;
+  width: 200px;
+  font-size: 25px;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -10px;
+}
+
 * {
   list-style: none;
   margin: 0;
@@ -305,6 +410,16 @@ section.about-img-section .about-img-3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.btn {
+  background-color: #D32F2F;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  font: small-caps 30px "B612 Mono", monospace;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 body,
@@ -342,18 +457,11 @@ a {
   border-radius: 30px;
 }
 
-a .btn {
-  background-color: #D32F2F;
+a .take-a-look {
   position: absolute;
   top: 450px;
   left: 150px;
   height: 60px;
   width: 300px;
-  border: 0;
-  border-radius: 30px;
-  color: #fff;
-  font: small-caps 30px "B612 Mono", monospace;
-  letter-spacing: 2px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

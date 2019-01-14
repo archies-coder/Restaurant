@@ -1,0 +1,73 @@
+.contact-section {
+    position: absolute;
+    top: 2425px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: color(grey);
+
+    .contact-heading {
+        font: font(primary);
+        margin-top: 30px;
+    }
+
+    span {
+        font: font(tagline);
+        color: color(green);
+    }
+
+    .contact-div {
+        width: 800px;
+        margin-left: 18%;
+        height: auto;
+        background-color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+
+        form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 80px 250px;
+            grid-row-gap: 60px;
+            text-align: center;
+
+            #fname,
+            #lname {
+                width: 300px;
+                border: 0.5px solid #000;
+                margin-left: 20px;
+                margin-top: 40px;
+            }
+
+            #fname::placeholder,
+            #lname::placeholder {
+                padding-left: 20px;
+            }
+
+            #message {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                border: 0.5px solid #000;
+                height: 250px;
+                width: 600px;
+                margin-left: 20px;
+                margin-top: -10px;
+            }
+
+            #message::placeholder {
+                padding-left: 20px;
+            }
+
+            .book-now {
+                position: absolute;
+                width: 200px;
+                font-size: 25px;
+                left: 50%;
+                margin-left: -100px;
+                margin-top: -10px;
+            }
+        }
+    }
+}
