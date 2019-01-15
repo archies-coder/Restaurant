@@ -284,17 +284,33 @@ section.about-img-section .about-img-3 {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-gap: 0;
   margin-top: 30px;
 }
 
 .gallery-section .gallery-img-container {
   height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
 .gallery-section .gallery-img-container img {
   height: 300px;
   width: 421px;
+}
+
+.gallery-section .gallery-img-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #000;
+}
+
+.gallery-section .gallery-img-container .overlay:hover {
+  opacity: 0.8;
 }
 
 .contact-section {
