@@ -418,6 +418,85 @@ section.about-img-section .about-img-3 {
   margin-top: -10px;
 }
 
+footer {
+  position: absolute;
+  width: 100%;
+  top: 3100px;
+  height: 200px;
+  color: white;
+  background-color: #111;
+  text-align: center;
+}
+
+footer .footer-heading {
+  font: 20px "Ubuntu", sans-serif;
+  font-size: 60px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+footer .copyright-text {
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+footer .developer-info a {
+  text-decoration: none;
+  color: #ebebeb;
+  cursor: pointer;
+}
+
+footer .developer-info a:hover {
+  text-decoration: underline;
+  color: #e6b9b9;
+}
+
+footer .developer-info,
+footer .developer-contact {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+footer .developer-contact {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+footer .social-ul-footer {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+footer .social-ul-footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .social-ul-footer li a {
+  color: white;
+}
+
+footer .social-ul-footer li span {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+}
+
+footer .social-ul-footer li span img {
+  height: 28px;
+  width: 28px;
+}
+
 * {
   list-style: none;
   margin: 0;
