@@ -5,11 +5,14 @@
 @import url("https://fonts.googleapis.com/css?family=Allura");
 header {
   height: 60px;
-  background-color: #fff;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 0, 0, 0.5)), color-stop(rgba(255, 255, 255, 0.527)), to(rgba(255, 217, 0, 0.5)));
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.527), rgba(255, 217, 0, 0.5));
 }
 
 header #title {
   font: 20px "Ubuntu", sans-serif;
+  font-size: 45px;
   display: inline-block;
   width: 33%;
 }
@@ -27,7 +30,10 @@ header #title h1 {
 header nav {
   display: inline-block;
   position: absolute;
-  top: 20px;
+  height: 40px;
+  top: 50%;
+  margin-top: -10px;
+  vertical-align: middle;
 }
 
 header nav ul {
@@ -79,7 +85,7 @@ header nav .social-ul li {
 }
 
 .about-div p {
-  font: italic small-caps normal 18px/150% Arial, Helvetica, sans-serif;
+  font: italic small-caps normal 16px/150% Arial, Helvetica, sans-serif;
   text-align: right;
   position: absolute;
   top: 400px;
@@ -88,8 +94,8 @@ header nav .social-ul li {
 }
 
 .about-para-2 {
-  margin-top: 60px;
-  font: italic small-caps normal 18px/150% Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  font: italic small-caps normal 16px/150% Arial, Helvetica, sans-serif;
   text-align: left;
   width: 50%;
   position: absolute;
@@ -103,7 +109,7 @@ section.about-img-section {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 600px;
+  top: 550px;
   width: 100%;
   background-color: #FF3300;
   height: 500px;
@@ -285,6 +291,8 @@ section.about-img-section .about-img-3 {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .gallery-section .gallery-img-container {
@@ -296,6 +304,7 @@ section.about-img-section .about-img-3 {
 .gallery-section .gallery-img-container img {
   height: 300px;
   width: 421px;
+  background-size: 100% 100%;
 }
 
 .gallery-section .gallery-img-container .overlay {
@@ -317,7 +326,7 @@ section.about-img-section .about-img-3 {
   position: absolute;
   top: 2425px;
   width: 100%;
-  height: auto;
+  height: 800px;
   text-align: center;
   background-color: #d4d4d4;
 }
@@ -334,7 +343,9 @@ section.about-img-section .about-img-3 {
 
 .contact-section .contact-div {
   width: 800px;
-  margin-left: 18%;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
   height: auto;
   background-color: #fff;
   text-align: center;
@@ -421,6 +432,7 @@ section.about-img-section .about-img-3 {
 footer {
   position: absolute;
   width: 100%;
+  bottom: 0;
   top: 3100px;
   height: 200px;
   color: white;
@@ -497,6 +509,43 @@ footer .social-ul-footer li span img {
   width: 28px;
 }
 
+@media (max-width: 1070px) {
+  .jumbo h1.wlcm-txt {
+    font-size: 55px;
+  }
+  ul.social-ul {
+    display: none;
+    right: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .about-div p {
+    width: 40%;
+  }
+  .about-para-2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+  a .take-a-look {
+    background-color: #fff;
+  }
+  .gallery-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-img-container {
+    height: width/3;
+  }
+}
+
 * {
   list-style: none;
   margin: 0;
@@ -505,6 +554,11 @@ footer .social-ul-footer li span img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
 }
 
 .btn {
@@ -554,8 +608,9 @@ a {
 
 a .take-a-look {
   position: absolute;
-  top: 450px;
-  left: 150px;
+  top: 70%;
+  left: 25%;
+  margin-left: -150px;
   height: 60px;
   width: 300px;
 }

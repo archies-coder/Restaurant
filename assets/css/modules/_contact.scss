@@ -2,7 +2,7 @@
     position: absolute;
     top: 2425px;
     width: 100%;
-    height: auto;
+    height: 800px;
     text-align: center;
     background-color: color(grey);
 
@@ -18,7 +18,9 @@
 
     .contact-div {
         width: 800px;
-        margin-left: 18%;
+        position: absolute;
+        left: 50%;
+        margin-left: -400px;
         height: auto;
         background-color: #fff;
         text-align: center;

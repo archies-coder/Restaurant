@@ -1,0 +1,40 @@
+@media (max-width: 1070px) {
+    .jumbo {
+        h1.wlcm-txt {
+            font-size: 55px;
+        }
+    }
+    ul.social-ul {
+        display: none;
+        right: 0;
+    }
+}
+
+@media (max-width: 930px) {
+    .about-div {
+        p {
+            width: 40%;
+        }
+    }
+    .about-para-2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    a {
+        .take-a-look {
+           background-color: #fff;
+        }
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;        
+        grid-template-rows: 1fr 1fr 1fr;         
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-img-container{
+        height: width/3;
+    }
+}
