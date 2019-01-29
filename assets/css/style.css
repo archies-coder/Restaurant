@@ -6,15 +6,13 @@
 header {
   height: 60px;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 0, 0, 0.5)), color-stop(rgba(255, 255, 255, 0.527)), to(rgba(255, 217, 0, 0.5)));
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.527), rgba(255, 217, 0, 0.5));
 }
 
 header #title {
   font: 20px "Ubuntu", sans-serif;
   font-size: 45px;
   display: inline-block;
-  width: 33%;
+  width: 400px;
 }
 
 header #title a {
@@ -23,17 +21,16 @@ header #title a {
 }
 
 header #title h1 {
-  padding-top: 10px;
+  padding-top: 1px;
   padding-left: 20px;
 }
 
 header nav {
   display: inline-block;
   position: absolute;
-  height: 40px;
+  height: 60px;
   top: 50%;
   margin-top: -10px;
-  vertical-align: middle;
 }
 
 header nav ul {
@@ -94,7 +91,6 @@ header nav .social-ul li {
 }
 
 .about-para-2 {
-  margin-top: 10px;
   font: italic small-caps normal 16px/150% Arial, Helvetica, sans-serif;
   text-align: left;
   width: 50%;
@@ -102,7 +98,7 @@ header nav .social-ul li {
   left: 20px;
 }
 
-section.about-img-section {
+.about-img-section {
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
           clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
   display: -webkit-box;
@@ -111,32 +107,31 @@ section.about-img-section {
   position: absolute;
   top: 550px;
   width: 100%;
-  background-color: #FF3300;
   height: 500px;
 }
 
-section.about-img-section .about-img {
+.about-img-section .about-img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-section.about-img-section .about-img-1 {
-  background: url(/assets/img/food-img-01.jpg);
+.about-img-section .about-img-1 {
+  background: url("/assets/img/food-img-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-section.about-img-section .about-img-2 {
-  background: url(/assets/img/food-img-02.jpeg);
+.about-img-section .about-img-2 {
+  background: url("/assets/img/food-img-02.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
 
-section.about-img-section .about-img-3 {
-  background: url(/assets/img/food-img-03.jpg);
+.about-img-section .about-img-3 {
+  background: url("/assets/img/food-img-03.jpg");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,8 +286,6 @@ section.about-img-section .about-img-3 {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   margin-top: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .gallery-section .gallery-img-container {
@@ -302,9 +295,8 @@ section.about-img-section .about-img-3 {
 }
 
 .gallery-section .gallery-img-container img {
-  height: 300px;
-  width: 421px;
-  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .gallery-section .gallery-img-container .overlay {
@@ -316,6 +308,12 @@ section.about-img-section .about-img-3 {
   width: 100%;
   opacity: 0;
   background-color: #000;
+  color: #fff;
+  font-size: 50px;
+  line-height: 300px;
+  font-weight: 1000;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 .gallery-section .gallery-img-container .overlay:hover {
@@ -515,34 +513,91 @@ footer .social-ul-footer li span img {
   }
   ul.social-ul {
     display: none;
-    right: 0;
+  }
+  nav {
+    position: absolute;
+    right: 20px;
+    height: 60px;
+    top: 50%;
+    padding-top: 5px;
+  }
+  #title {
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 930px) {
+  .jumbo .wlcm-txt {
+    top: 100px;
+    left: 60px;
+  }
+}
+
+@media (max-width: 730px) {
+  .about-div .about {
+    top: 320px;
+  }
+  .about-div span {
+    top: 385px;
+  }
   .about-div p {
     width: 40%;
+    top: 420px;
+    font-size: 14px;
   }
-  .about-para-2 {
+  .about-div .about-para-2 {
+    font-size: 14px;
+  }
+  .about-div .about-img-section {
+    top: 600px;
+  }
+  .about-img-section {
+    top: 650px;
+  }
+  .about-img-section .about-img-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  .about-para-2,
+  .about-div p {
     width: 40%;
+    height: 50%;
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 650px) {
-  a .take-a-look {
-    background-color: #fff;
+@media (max-width: 680px) {
+  header > nav {
+    display: none;
   }
-  .gallery-grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+  header > #title {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+  }
+  .jumbo h1.wlcm-txt {
+    font-size: 50px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .gallery-img-container {
-    height: width/3;
+@media (max-width: 590px) {
+  .jumbo h1.wlcm-txt {
+    font-size: 45px;
+    top: 80px;
+    left: 40px;
+  }
+  .jumbo a > .take-a-look {
+    top: 100%;
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .jumbo h1.wlcm-txt {
+    top: 70px;
+    left: 20px;
   }
 }
 
@@ -555,6 +610,9 @@ footer .social-ul-footer li span img {
   background-repeat: no-repeat;
   background-position: center top;
   font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
 }
 
 img {
@@ -566,7 +624,6 @@ img {
   border: 0;
   border-radius: 30px;
   color: #fff;
-  font: small-caps 30px "B612 Mono", monospace;
   letter-spacing: 2px;
   cursor: pointer;
 }
@@ -584,10 +641,9 @@ html {
 .jumbo {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
-  background-color: #FF3300;
   width: 100%;
   height: 500px;
-  background: url(/assets/img/food-salad.jpg);
+  background: url("/assets/img/food-salad.jpg");
   background-size: cover;
   background-position: center top;
 }
@@ -608,10 +664,22 @@ a {
 
 a .take-a-look {
   position: absolute;
-  top: 70%;
+  top: 430px;
   left: 25%;
   margin-left: -150px;
   height: 60px;
   width: 300px;
+  font: small-caps 30px "B612 Mono", monospace;
+}
+
+@media (max-width: 730px) {
+  .take-a-look {
+    position: absolute;
+    top: 440px;
+    width: 250px;
+  }
+  .about-para-2 {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

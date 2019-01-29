@@ -2,12 +2,13 @@ header{
     height: 60px;
     position: relative;
     
+
     #title{
 
         font: font(title);
         font-size: 45px;
         display: inline-block;
-        width: 33%;
+        width: 400px;
         
         a{
         color: #000;
@@ -15,7 +16,7 @@ header{
         }
 
         h1{
-        padding-top: 10px;
+        padding-top: 1px;
         padding-left: 20px;
         }
     }
@@ -23,10 +24,9 @@ header{
     nav{
         display: inline-block;
         position: absolute;
-        height: 40px;
+        height: 60px;
         top: 50%;
         margin-top: -10px;
-        vertical-align: middle;
 
         ul{
             cursor: pointer;

@@ -26,7 +26,6 @@
 }
 
 .about-para-2 {
-    margin-top: 10px;
     font: font(secondary);
     text-align: left;
     width: 50%;
@@ -34,7 +33,7 @@
     left: 20px;
 }
 
-section.about-img-section {
+.about-img-section {
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
     display: flex;
     position: absolute;
@@ -47,21 +46,21 @@ section.about-img-section {
     }
 
     .about-img-1{
-        background: url(/assets/img/food-img-01.jpg);
+        background: url('/assets/img/food-img-01.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
     }
 
     .about-img-2{
-        background: url(/assets/img/food-img-02.jpeg);
+        background: url('/assets/img/food-img-02.jpeg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
     }
 
     .about-img-3{
-        background: url(/assets/img/food-img-03.jpg);
+        background: url('/assets/img/food-img-03.jpg');
         background-size: auto;
         background-position: center;
         background-repeat: no-repeat;

@@ -22,6 +22,8 @@
     background-repeat: no-repeat;
     background-position: center top;
     font-size: 100%;
+    box-sizing: border-box;
+    outline: 0;
 }
 
 img {
@@ -33,7 +35,6 @@ img {
     border: 0;
     border-radius: 30px;
     color:#fff;
-    font: font(btn-text);
     letter-spacing: 2px;
     cursor: pointer;
 }
@@ -50,10 +51,9 @@ html {
 
 .jumbo {
     clip-path: polygon(0 0, 100% 0, 100% 21%, 0 96%);
-    background-color: color(orange);
     width: 100%;
     height: 500px;
-    background: url(/assets/img/food-salad.jpg);
+    background: url('/assets/img/food-salad.jpg');
     background-size: cover;
     background-position: center top;
 
@@ -73,13 +73,26 @@ a{
     
     .take-a-look {
         position: absolute;
-        top: 70%;
+        top: 430px;
         left: 25%;
         margin-left: -150px;
         height: 60px;
         width: 300px;
+        font: font(btn-text);
     }
 
+  }
+
+  @media(max-width:730px) {
+      .take-a-look {
+        position: absolute;
+        top: 440px;
+        width: 250px;
+      }
+
+      .about-para-2 {
+         font-size: 14px; 
+      }
   }
 
 
