@@ -37,6 +37,7 @@ img {
     color:#fff;
     letter-spacing: 2px;
     cursor: pointer;
+    font: font(btn-text);
 }
 
 
@@ -45,6 +46,7 @@ html {
     margin: 0;
     padding: 0;
     user-select: none;
+    overflow-x: hidden;
 }
 
 
@@ -84,14 +86,30 @@ a{
   }
 
   @media(max-width:730px) {
-      .take-a-look {
+      a>.take-a-look {
         position: absolute;
-        top: 440px;
+        top: 400px;
         width: 250px;
+        left: 30%;
       }
-
       .about-para-2 {
          font-size: 14px; 
+      }
+  }
+  @media(max-width:660px){
+    a>.take-a-look {
+        position: absolute;
+        top: 340px;
+        width: 250px;
+        left: 30%;
+      }
+  }
+  @media(max-width:530px){
+    a>.take-a-look {
+        position: absolute;
+        top: 340px;
+        width: 225px;
+        left: 50%;
       }
   }
 

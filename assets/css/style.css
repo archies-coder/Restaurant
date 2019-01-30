@@ -140,7 +140,7 @@ header nav .social-ul li {
 .testimonials-section {
   position: absolute;
   padding-top: 60px;
-  top: 1100px;
+  top: 1000px;
   width: 100%;
   height: 600px;
   background-color: #d4d4d4;
@@ -155,6 +155,7 @@ header nav .social-ul li {
   height: 600px;
   width: 100%;
   position: absolute;
+  opacity: 0.8;
 }
 
 .slider-container .slides {
@@ -261,7 +262,7 @@ header nav .social-ul li {
 
 .gallery-section {
   position: absolute;
-  top: 1700px;
+  top: 1600px;
   height: auto;
   width: 100%;
   text-align: center;
@@ -322,7 +323,7 @@ header nav .social-ul li {
 
 .contact-section {
   position: absolute;
-  top: 2425px;
+  top: 2325px;
   width: 100%;
   height: 800px;
   text-align: center;
@@ -528,12 +529,52 @@ footer .social-ul-footer li span img {
 
 @media (max-width: 930px) {
   .jumbo .wlcm-txt {
-    top: 100px;
-    left: 60px;
+    top: 120px;
+    left: 80px;
+  }
+  .contact-section > .contact-div {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+  }
+  .contact-section > .contact-div form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 40px 40px 250px;
+        grid-template-rows: 40px 40px 250px;
+    grid-gap: 20px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .contact-section > .contact-div form #fname,
+  .contact-section > .contact-div form #lname {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    margin: 0;
+    margin-left: 25%;
+  }
+  .contact-section > .contact-div form #message {
+    width: 400px;
+    margin-left: 15%;
+    margin-top: 10px;
+  }
+  .contact-section > .contact-div form .book-now {
+    position: absolute;
+    top: 425px;
+    margin-top: -10px;
   }
 }
 
 @media (max-width: 730px) {
+  .jumbo .wlcm-txt {
+    top: 100px;
+    left: 60px;
+  }
   .about-div .about {
     top: 320px;
   }
@@ -543,9 +584,6 @@ footer .social-ul-footer li span img {
   .about-div p {
     width: 40%;
     top: 420px;
-    font-size: 14px;
-  }
-  .about-div .about-para-2 {
     font-size: 14px;
   }
   .about-div .about-img-section {
@@ -564,6 +602,28 @@ footer .social-ul-footer li span img {
     width: 40%;
     height: 50%;
     margin-bottom: 20px;
+  }
+  .testimonials-section {
+    display: none;
+  }
+  .gallery-section {
+    top: 1220px;
+  }
+  .gallery-section .gallery-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin-top: 30px;
+  }
+  .contact-section {
+    top: 2250px;
+    padding: 0;
+  }
+  footer {
+    top: 3000px;
   }
 }
 
@@ -584,13 +644,27 @@ footer .social-ul-footer li span img {
 @media (max-width: 590px) {
   .jumbo h1.wlcm-txt {
     font-size: 45px;
-    top: 80px;
+    top: 90px;
     left: 40px;
   }
-  .jumbo a > .take-a-look {
-    top: 100%;
-    width: 200px;
-    font-size: 20px;
+  .about-div .about {
+    top: 420px;
+  }
+  .about-div span {
+    top: 475px;
+  }
+  .about-div p {
+    top: 520px;
+  }
+  .about-img-section {
+    top: 840px;
+  }
+  footer {
+    height: 300px;
+  }
+  footer .developer-info,
+  footer .developer-contact {
+    top: 150px;
   }
 }
 
@@ -626,6 +700,7 @@ img {
   color: #fff;
   letter-spacing: 2px;
   cursor: pointer;
+  font: small-caps 30px "B612 Mono", monospace;
 }
 
 body,
@@ -636,6 +711,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow-x: hidden;
 }
 
 .jumbo {
@@ -673,13 +749,32 @@ a .take-a-look {
 }
 
 @media (max-width: 730px) {
-  .take-a-look {
+  a > .take-a-look {
     position: absolute;
-    top: 440px;
+    top: 400px;
     width: 250px;
+    left: 30%;
   }
   .about-para-2 {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  a > .take-a-look {
+    position: absolute;
+    top: 340px;
+    width: 250px;
+    left: 30%;
+  }
+}
+
+@media (max-width: 530px) {
+  a > .take-a-look {
+    position: absolute;
+    top: 340px;
+    width: 225px;
+    left: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
