@@ -673,6 +673,10 @@ footer .social-ul-footer li span img {
     top: 70px;
     left: 20px;
   }
+  .contact-section > .contact-div > form > #message {
+    width: 300px;
+    margin-left: 24%;
+  }
 }
 
 * {
