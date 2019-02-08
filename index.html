@@ -13,13 +13,17 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-133485152-1');
         </script>
     <title>Restaurant</title>
 </head>
 
-<body>
+<body onload="loaded()">
+    <!-- Preloader -->
+    <div id="preloader">
+
+    </div>
+
     <!-- header -->
 
     <header>
@@ -95,11 +99,11 @@
             <div class="testimonials-bg"></div>
 
             <!-- Next And Prev -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1); moveLeft();">&#10094;</a>
+            <a class="next" onclick="plusSlides(1);moveLeft()">&#10095;</a>
  
-            <div class="slider-container">
-                <div class="slides">
+            <div class="slider-container fade">
+                <div class="slides fade 1">
                     <div class="avatar-div"><img src="./assets/img/avatar-1.jpg" alt="avatar1" class="avatar"></div>
                     <h1 class="avatar-name">Hank Dono1</h1>
                     <h3 class="avatar-info">FOUNDER AND CEO OF TITLE</h3>
@@ -108,7 +112,7 @@
                     habitant morbi tristique senectus.</p>
                 </div>
 
-                <div class="slides">
+                <div class="slides fade 2">
                     <div class="avatar-div"><img src="./assets/img/avatar-2.jpg" alt="avatar2" class="avatar"></div>
                     <h1 class="avatar-name">Hank Dono2</h1>
                     <h3 class="avatar-info">FOUNDER AND CEO OF TITLE</h3>
@@ -117,7 +121,7 @@
                     habitant morbi tristique senectus.</p>
                 </div>
 
-                <div class="slides">
+                <div class="slides fade 3">
                     <div class="avatar-div"><img src="./assets/img/avatar-3.jpg" alt="avatar3" class="avatar"></div>
                     <h1 class="avatar-name">Hank Dono3</h1>
                     <h3 class="avatar-info">FOUNDER AND CEO OF TITLE</h3>
@@ -196,4 +200,3 @@
     <script src="./assets/js/index.js"></script>
 </body>
 </html> 
-

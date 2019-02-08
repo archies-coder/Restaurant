@@ -23,6 +23,9 @@ function showSlides(n){
 }
 
 // // Next/previous controls
+let slides = document.getElementsByClassName('slides') 
+
+
 
 let plusSlides = (n) => {
     showSlides(slideIndex += n);
@@ -32,3 +35,18 @@ function currentSlide(n){
     showSlides(slideIndex = n);
 }
 
+//Animations
+let moveLeft = () => {
+    if (slideIndex<=2) {
+        slides[slideIndex].id = 'animateToRight';
+    } else {
+        slides[0].id = 'animateToRight';
+    }
+    slides[slideIndex-1].id = 'animateToLeft';
+}
+
+let preloader = document.getElementById('preloader');
+
+let loaded = () =>{
+    preloader.style.display = 'none';
+}

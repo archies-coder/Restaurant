@@ -8,7 +8,6 @@
 @import './modules/footer';
 @import './modules/mediaqueries';
 
-
 // CSS Starts Here Actually
 
 // Common/Global
@@ -24,6 +23,16 @@
     font-size: 100%;
     box-sizing: border-box;
     outline: 0;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../gif/preloader.gif') center no-repeat;
+    position: fixed;
+    z-index: 999999;
+    text-align: center;
+    overflow-y: hidden;
 }
 
 img {

@@ -191,6 +191,8 @@ header nav .social-ul li {
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 .prev,
@@ -229,7 +231,7 @@ header nav .social-ul li {
 .dot-div {
   display: block;
   position: absolute;
-  top: 625px;
+  top: 575px;
   width: 200px;
   left: 50%;
   margin-left: -100px;
@@ -258,6 +260,74 @@ header nav .social-ul li {
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#animateToLeft {
+  -webkit-animation-name: animateToLeft;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animateToLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToLeft {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+#animateToLeft {
+  -webkit-animation-name: animateToLeft;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animateToLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToLeft {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+#animateToRight {
+  -webkit-animation-name: animateToRight;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animateToRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToRight {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
 }
 
 .gallery-section {
@@ -313,8 +383,8 @@ header nav .social-ul li {
   font-size: 50px;
   line-height: 300px;
   font-weight: 1000;
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .gallery-section .gallery-img-container .overlay:hover {
@@ -691,6 +761,16 @@ footer .social-ul-footer li span img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: 0;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("../gif/preloader.gif") center no-repeat;
+  position: fixed;
+  z-index: 999999;
+  text-align: center;
+  overflow-y: hidden;
 }
 
 img {

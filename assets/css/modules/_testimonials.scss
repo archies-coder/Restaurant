@@ -51,6 +51,8 @@
                 background-repeat: no-repeat;
                 background-position: center top;
                 border-radius: 50%;
+                height: 100px;
+            width: 100px;
             }
         }
     }
@@ -88,7 +90,7 @@
 .dot-div {
     display: block;
     position: absolute;
-    top: 625px; 
+    top: 575px; 
     width: 200px;
     left: 50%;
     margin-left: -100px;
@@ -113,4 +115,52 @@
         display: inline-block;
         transition: background-color 0.6s ease;
     }
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ 
+
+#animateToLeft {
+    -webkit-animation-name: animateToLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-name: animateToLeft;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToLeft {
+    from {left: 50%;}
+    to {left: -50%;}
+  }
+#animateToLeft {
+    -webkit-animation-name: animateToLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-name: animateToLeft;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToLeft {
+    from {left: 50%;}
+    to {left: -50%;}
+  }
+
+#animateToRight {
+    -webkit-animation-name: animateToRight;
+    -webkit-animation-duration: 1.5s;
+    animation-name: animateToRight;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animateToRight {
+    from {left: 100%;}
+    to {left: 50%;}
   }

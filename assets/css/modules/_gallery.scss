@@ -43,10 +43,10 @@
             font-size: 50px;
             line-height: 300px;
             font-weight: 1000;
-            transition: 400ms;
-        }
-        .overlay:hover {
-            opacity: 0.8;
+            transition: 500ms;
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }
